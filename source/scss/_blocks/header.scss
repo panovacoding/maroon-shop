@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    &__svg {
+        height: 21px;
+        &--account {
+            width: 16px;
+        }
+        &--cart {
+            width: 18px;
+        }
+    }
+    &__btn {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}

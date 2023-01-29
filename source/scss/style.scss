@@ -17,8 +17,28 @@
 */
 @import "_blocks/container";
 @import "_blocks/footer";
+@import "_blocks/logo";
+@import "_blocks/header";
 
 .container {
   max-width: 85%;
   margin: auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: right;
+  gap: 35px;
+  &__list-item>a {
+    color: $color-text;
+    font-size: 16px;
+    line-height: 23px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.svg-wrap {
+  display: flex;
+  margin-left: 15px;
+  gap: 30px;
 }
