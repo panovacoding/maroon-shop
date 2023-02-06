@@ -29,25 +29,27 @@
   <svg>
     <use xlink:href="./img/icons/sprite.svg#fb"></use>
   </svg> -->
-  <body>
+  <body class="body-bg">
     @@include('blocks/header.html')
     <main>
       <section class="heading-section container">
         <div class="heading-section__cards-wrap">
           <div class="heading-section__card">
-            <img src="#" alt="img">
+            <img src="img/images/heading-img-left.jpg" alt="img">
             <div class="heading-section__card__link">
               <span>Уход для лица</span>
             </div>
           </div>
-          <div class="heading-section__card">
+          <div class="heading-section__card heading-section__card--h1">
             <h1>MAROON</h1>
             <p>Натуральная косметика
               для бережного ухода за кожей</p>
-              <button type="button">Подробнее</button>
+              @@include('blocks/button.html', {
+                "txt": "Подробнее",
+            })
           </div>
           <div class="heading-section__card">
-            <img src="#" alt="img">
+            <img src="img/images/heading-img-right.jpg" alt="img">
             <div class="heading-section__card__link">
               <span>Уход для тела</span>
             </div>

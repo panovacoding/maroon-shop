@@ -1,15 +1,18 @@
 <header class="header container">
     @@include('blocks/logo.html', {
-        "class" : "logo--header",
+        "class" : "logo--shadow",
     })
         <ul class="nav-list">
             @@include('blocks/menu-list-item.html', {
+                "link-shadow": "nav-list__list-item__link--shadow",
                 "list-item": "Каталог",
             })
             @@include('blocks/menu-list-item.html', {
+                "link-shadow": "nav-list__list-item__link--shadow",
                 "list-item": "О нас",
             })
             @@include('blocks/menu-list-item.html', {
+                "link-shadow": "nav-list__list-item__link--shadow",
                 "list-item": "Контакты",
             })
             <li>
