@@ -62,7 +62,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 30px 6% 70px;
+    padding: 30px 6% 130px;
   }
   &__card {
     display: flex;
@@ -75,6 +75,78 @@
         margin-top: 30px;
         margin-bottom: 40px;
       }
+    }
+  }
+}
+
+.bestsellers {
+  padding: 140px 0;
+  display: flex;
+  gap: 86px;
+  &__description {
+    max-width: 214px;
+    &__text {
+      margin: 30px 0 40px;
+    }
+  }
+}
+
+.new-collection {
+  background-image: url(/img/images/banner.png);
+  background-repeat: no-repeat;
+  background-size: 100% 400px;
+  min-height: 400px;
+  &__wrap {
+    padding-left: 52%;
+    padding-top: 81px;
+    &>h2 {
+      max-width: 280px;
+      margin-bottom: 30px;
+    }
+    &>p {
+      max-width: 284px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.individual-care {
+  padding: 140px 0;
+  // display: flex;
+  position: relative;
+  &__text-wrap {
+    background-color: #F4F1ED;
+    max-width: 670px;
+    padding: 100px;
+    &>h2 {
+      margin-bottom: 40px;
+    }
+    &>p {
+      max-width: 327px;
+      margin-bottom: 20px;
+    }
+    &>button {
+      margin-top: 25px;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 226px;
+    left: 500px;
+  }
+}
+
+.company-history {
+  background-image: url(/img/images/banner_3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 433px;
+  &__wrap {
+    padding: 120px 201px;
+    text-align: center;
+    &>h2 {
+      max-width: 800px;
+      margin-bottom: 50px;
     }
   }
 }
