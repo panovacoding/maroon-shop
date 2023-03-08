@@ -1,0 +1,17 @@
+.socials {
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+    &__fb {
+      width: 11px;
+      height: 18px;
+    }
+    &__insta {
+      width: 20px;
+      height: 20px;
+    }
+    &__twitter {
+      width: 20px;
+      height: 17px;
+    }
+  }

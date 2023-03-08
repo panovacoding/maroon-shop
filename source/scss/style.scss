@@ -20,6 +20,8 @@
 @import "_blocks/logo";
 @import "_blocks/header";
 @import "_blocks/button";
+@import "_blocks/socials";
+@import "_blocks/slide";
 
 .container {
   max-width: 85%;
@@ -149,4 +151,89 @@
       margin-bottom: 50px;
     }
   }
+}
+
+.subscribe-section {
+  display: flex;
+  gap: 71px;
+  align-items: center;
+  padding: 140px 0 140px;
+  &__img-wrap {
+    display: grid;
+  }
+  &__text-wrap {
+    & > h2 {
+      max-width: 366px;
+    }
+    & > p {
+      max-width: 381px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.grid-box {
+  width: 233px;
+  height: 233px;
+  &--one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  &--two {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  &--three {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  &--four {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  &--five {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  &--six {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+}
+
+.contacts {
+  padding-bottom: 140px;
+  &__text-wrap {
+    max-width: 670px;
+    padding: 100px;
+    background-color: #F4F1ED;
+    position: relative;
+    & > h2 {
+      margin-bottom: 40px;
+    }
+    & > span {
+      font-weight: 600;
+    }
+    & > a {
+      color: $color-text;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+  &__map {
+    position: absolute;
+    top: 12%;
+    left: 400px;
+  }
+}
+
+address {
+  font-style: normal;
+  max-width: 256px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.tel, .email {
+  margin-bottom: 35px;
 }

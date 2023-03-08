@@ -1,32 +1,34 @@
 <footer>
-  <div class="container">
-    @@include('blocks/logo.html')
-      <nav class="header__wrapper__menu-wrap">
-          <ul class="nav-list">
-            @@include('blocks/menu-list-item.html', {
-                "list-item": "Каталог",
-            })
-            @@include('blocks/menu-list-item.html', {
-                "list-item": "О нас",
-            })
-            @@include('blocks/menu-list-item.html', {
-                "list-item": "Магазины",
-            })
-            @@include('blocks/menu-list-item.html', {
-                "list-item": "Контакты",
-            })
-          </ul>
-      </nav>
-      <div class="socials"></div>
+  <div class="upper-footer container">
+    <div class="inner-wrap">
+        @@include('blocks/logo.html')
+        <nav class="header__wrapper__menu-wrap">
+            <ul class="nav-list">
+              @@include('blocks/menu-list-item.html', {
+                  "list-item": "Каталог",
+              })
+              @@include('blocks/menu-list-item.html', {
+                  "list-item": "О нас",
+              })
+              @@include('blocks/menu-list-item.html', {
+                  "list-item": "Магазины",
+              })
+              @@include('blocks/menu-list-item.html', {
+                  "list-item": "Контакты",
+              })
+            </ul>
+        </nav>
+    </div>
+      @@include('blocks/socials.html')
   </div>
   <hr>
-  <div class="container footer__lower-wrap">
+  <div class="lower-footer container">
       <div class="footer__lower-left">
           <span>Maroon</span>
           <span>(C)</span>
           <span>2020 Все права защищены</span>
       </div>
-      <div class="footer__lower-right">
+      <div class="lower-footer__right">
           <a href="#">Политика конфиденциальности</a>
       </div>
   </div>
