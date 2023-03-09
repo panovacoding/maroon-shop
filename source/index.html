@@ -63,14 +63,66 @@
             <a href="#" class="btn">Смотреть все</a>
         </div>
         <div class="bestsellers__slider">
-          <div class="slide">
-            <img src="/img/images/high.jpg" alt="slide img">
-            <div class="slide__product-info">
-              <span class="slide__product-name">High</span>
-              <span class="slide__product-type">крем для лица</span>
-              <a class="slide__product-link" href="#">Подробнее</a>
-            </div>
-          </div>
+          @@include('blocks/slide.html', {
+            "src": "/img/images/high.jpg",
+            "productName": "High",
+            "productType": "крем для лица",
+          })
+          @@include('blocks/slide.html', {
+            "src": "/img/images/rest.jpg",
+            "productName": "Rest",
+            "productType": "минеральная пудра",
+          })
+          @@include('blocks/slide.html', {
+            "src": "/img/images/rose.jpg",
+            "productName": "Rose",
+            "productType": "крем для лица",
+          })
+          @@include('blocks/slide.html', {
+            "src": "/img/images/milk.jpg",
+            "productName": "Milk",
+            "productType": "масло для тела",
+          })
+          @@include('blocks/slide.html', {
+            "src": "/img/images/paradise.jpg",
+            "productName": "Paradise",
+            "productType": "минеральная пудра",
+          })
+          @@include('blocks/slide.html', {
+            "src": "/img/images/sun.jpg",
+            "productName": "Sun",
+            "productType": "бомбочка для ванны",
+          })
+          @@include('blocks/slide.html', {
+            "src": "/img/images/violet.jpg",
+            "productName": "Violet",
+            "productType": "крем для лица",
+          })
+          @@include('blocks/slide.html', {
+            "src": "/img/images/clean.jpg",
+            "productName": "Clean",
+            "productType": "маска для лица",
+          })
+          @@include('blocks/slide.html', {
+            "src": "/img/images/coconut.jpg",
+            "productName": "Coconut",
+            "productType": "масло для тела",
+          })
+          @@include('blocks/slide.html', {
+            "src": "/img/images/lavender.jpg",
+            "productName": "Lavender",
+            "productType": "мыло ручной работы",
+          })
+          @@include('blocks/slide.html', {
+            "src": "/img/images/lotos.jpg",
+            "productName": "Lotos",
+            "productType": "маска для лица",
+          })
+          @@include('blocks/slide.html', {
+            "src": "/img/images/earth.jpg",
+            "productName": "Earth",
+            "productType": "бомбочка для ванны",
+          })
         </div>
       </section>
       <section class="new-collection">
