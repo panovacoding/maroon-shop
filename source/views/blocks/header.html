@@ -1,33 +1,30 @@
-<header class="header container">
-    @@include('blocks/logo.html', {
-        "class" : "logo--shadow",
-    })
-        <ul class="nav-list">
-            @@include('blocks/menu-list-item.html', {
-                "link-shadow": "nav-list__list-item__link--shadow",
-                "list-item": "Каталог",
-            })
-            @@include('blocks/menu-list-item.html', {
-                "link-shadow": "nav-list__list-item__link--shadow",
-                "list-item": "О нас",
-            })
-            @@include('blocks/menu-list-item.html', {
-                "link-shadow": "nav-list__list-item__link--shadow",
-                "list-item": "Контакты",
-            })
-            <li>
-                <div class="svg-wrap">
-                    <button type="button" class="header__btn">
-                        <svg class="header__svg header__svg--account">
-                            <use xlink:href="./img/icons/sprite.svg#account"></use>
-                        </svg>
-                    </button>
-                    <button type="button" class="header__btn">
-                        <svg class="header__svg header__svg--cart">
-                            <use xlink:href="./img/icons/sprite.svg#cart"></use>
-                        </svg>
-                    </button>
-                </div>
-            </li>
-        </ul>
+<header class="header">
+    <div class="header__wrap container">
+        @@include('blocks/logo.html')
+            <ul class="nav-list">
+                @@include('blocks/menu-list-item.html', {
+                    "list-item": "Каталог",
+                })
+                @@include('blocks/menu-list-item.html', {
+                    "list-item": "О нас",
+                })
+                @@include('blocks/menu-list-item.html', {
+                    "list-item": "Контакты",
+                })
+                <li>
+                    <div class="svg-wrap">
+                        <button type="button" class="header__btn">
+                            <svg class="header__svg header__svg--account">
+                                <use xlink:href="./img/icons/sprite.svg#account"></use>
+                            </svg>
+                        </button>
+                        <button type="button" class="header__btn">
+                            <svg class="header__svg header__svg--cart">
+                                <use xlink:href="./img/icons/sprite.svg#cart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+    </div>
 </header>
