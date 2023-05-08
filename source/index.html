@@ -10,9 +10,13 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
 
     <script>
       var docElement = document.documentElement;
@@ -59,72 +63,92 @@
         </div>
       </section>
       <section class="bestsellers container">
-        <div class="bestsellers__description">
-          <h2>Бестселлеры</h2>
-          <p class="bestsellers__description__text">Легендарные продукты, завоевавшие любовь наших клиентов</p>
-            <a href="#" class="btn">Смотреть все</a>
-        </div>
-        <div class="bestsellers__slider">
-          @@include('blocks/slide.html', {
-            "src": "/img/images/high.jpg",
-            "productName": "High",
-            "productType": "крем для лица",
-          })
-          @@include('blocks/slide.html', {
-            "src": "/img/images/rest.jpg",
-            "productName": "Rest",
-            "productType": "минеральная пудра",
-          })
-          @@include('blocks/slide.html', {
-            "src": "/img/images/rose.jpg",
-            "productName": "Rose",
-            "productType": "крем для лица",
-          })
-          @@include('blocks/slide.html', {
-            "src": "/img/images/milk.jpg",
-            "productName": "Milk",
-            "productType": "масло для тела",
-          })
-          @@include('blocks/slide.html', {
-            "src": "/img/images/paradise.jpg",
-            "productName": "Paradise",
-            "productType": "минеральная пудра",
-          })
-          @@include('blocks/slide.html', {
-            "src": "/img/images/sun.jpg",
-            "productName": "Sun",
-            "productType": "бомбочка для ванны",
-          })
-          @@include('blocks/slide.html', {
-            "src": "/img/images/violet.jpg",
-            "productName": "Violet",
-            "productType": "крем для лица",
-          })
-          @@include('blocks/slide.html', {
-            "src": "/img/images/clean.jpg",
-            "productName": "Clean",
-            "productType": "маска для лица",
-          })
-          @@include('blocks/slide.html', {
-            "src": "/img/images/coconut.jpg",
-            "productName": "Coconut",
-            "productType": "масло для тела",
-          })
-          @@include('blocks/slide.html', {
-            "src": "/img/images/lavender.jpg",
-            "productName": "Lavender",
-            "productType": "мыло ручной работы",
-          })
-          @@include('blocks/slide.html', {
-            "src": "/img/images/lotos.jpg",
-            "productName": "Lotos",
-            "productType": "маска для лица",
-          })
-          @@include('blocks/slide.html', {
-            "src": "/img/images/earth.jpg",
-            "productName": "Earth",
-            "productType": "бомбочка для ванны",
-          })
+        <div class="bestsellers__wrapper">
+          <div class="bestsellers__description">
+            <h2>Бестселлеры</h2>
+            <p class="bestsellers__description__text">Легендарные продукты, завоевавшие любовь наших клиентов</p>
+              <a href="#" class="btn">Смотреть все</a>
+          </div>
+          <div class="bestsellers__slider">
+            <div class="bestsellers__slider-wrap">
+              <div class="bestsellers__slider swiper">
+                <div class="swiper-wrapper">
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/high.jpg",
+                    "productName": "High",
+                    "productType": "крем для лица",
+                  })
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/rest.jpg",
+                    "productName": "Rest",
+                    "productType": "минеральная пудра",
+                  })
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/rose.jpg",
+                    "productName": "Rose",
+                    "productType": "крем для лица",
+                  })
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/milk.jpg",
+                    "productName": "Milk",
+                    "productType": "масло для тела",
+                  })
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/paradise.jpg",
+                    "productName": "Paradise",
+                    "productType": "минеральная пудра",
+                  })
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/sun.jpg",
+                    "productName": "Sun",
+                    "productType": "бомбочка для ванны",
+                  })
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/violet.jpg",
+                    "productName": "Violet",
+                    "productType": "крем для лица",
+                  })
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/clean.jpg",
+                    "productName": "Clean",
+                    "productType": "маска для лица",
+                  })
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/coconut.jpg",
+                    "productName": "Coconut",
+                    "productType": "масло для тела",
+                  })
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/lavender.jpg",
+                    "productName": "Lavender",
+                    "productType": "мыло ручной работы",
+                  })
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/lotos.jpg",
+                    "productName": "Lotos",
+                    "productType": "маска для лица",
+                  })
+                  @@include('blocks/slide.html', {
+                    "src": "/img/images/earth.jpg",
+                    "productName": "Earth",
+                    "productType": "бомбочка для ванны",
+                  })
+                </div>
+              </div>
+              <div class="arrow-wrap">
+                <button type="button" class="slider-btn-prev bestsellers__slider-button">
+                  <svg class="arrow arrow--left">
+                    <use xlink:href="./img/icons/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <button type="button" class="slider-btn-next bestsellers__slider-button">
+                  <svg class="arrow arrow--right">
+                    <use xlink:href="./img/icons/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="new-collection">

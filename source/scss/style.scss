@@ -73,10 +73,14 @@
 }
 
 .bestsellers {
-  padding: 140px 0;
   display: flex;
-  gap: 86px;
-  overflow: hidden;
+  flex-direction: column;
+  &__wrapper{
+    padding: 140px 0 0 0;
+    display: flex;
+    gap: 86px;
+    overflow: hidden;
+  }
   &__description {
     max-width: 214px;
     &__text {
@@ -85,7 +89,33 @@
   }
   &__slider {
     display: flex;
-    gap: 30px;
+    overflow: hidden;
+    max-width: 100%;
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 100%;
+    }
+    &-button {
+      width: 26px;
+      height: 12px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.arrow {
+  width: 26px;
+  height: 12px;
+  display: inline;
+  &-wrap {
+    align-self: flex-end;
+    padding: 25px 0 140px 0;
+    display: flex;
+    gap: 32px;
   }
 }
 
