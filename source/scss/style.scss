@@ -69,12 +69,18 @@
         margin-bottom: 40px;
       }
     }
+    &__link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 
 .bestsellers {
   display: flex;
   flex-direction: column;
+  padding-left: calc((100vw - 84.26%) / 2);
   &__wrapper{
     padding: 140px 0 0 0;
     display: flex;
@@ -88,7 +94,7 @@
     }
   }
   &__slider {
-    display: flex;
+    // display: flex;
     overflow: hidden;
     max-width: 100%;
     &-wrap {
@@ -116,6 +122,7 @@
     padding: 25px 0 140px 0;
     display: flex;
     gap: 32px;
+    margin-right: calc(((100vw - 84.26%) / 2) - 214px);
   }
 }
 

@@ -3,7 +3,7 @@ new Swiper(".swiper", {
         nextEl: '.slider-btn-next',
         prevEl: '.slider-btn-prev',
     },
-    spaceBetween: 30,
+    spaceBetween: -40,
     slidesPerView: 4,
     slidesPerGroup: 1,
 })
