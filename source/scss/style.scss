@@ -270,3 +270,37 @@ address {
 .tel, .email {
   margin-bottom: 35px;
 }
+
+//CATALOG STYLES
+
+.filter-section {
+  margin-top: 7.5%;
+  border: solid;
+}
+
+.catalog {
+  border: solid;
+}
+
+.big-slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 65px;
+}
+
+.big-slider__slide {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  gap: 10px;
+}

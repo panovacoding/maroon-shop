@@ -179,48 +179,8 @@
             <a href="#" class="btn">Наша история</a>
         </div>
       </section>
-      <section class="subscribe-section container">
-        <div class="subscribe-section__img-wrap">
-          <div class="grid-box grid-box--one">
-            <img src="/img/images/grid1.jpg" alt="">
-          </div>
-          <div class="grid-box grid-box--two">
-            <img src="/img/images/grid2.jpg" alt="">
-          </div>
-          <div class="grid-box grid-box--three">
-            <img src="/img/images/grid3.jpg" alt="">
-          </div>
-          <div class="grid-box grid-box--four">
-            <img src="/img/images/grid4.jpg" alt="">
-          </div>
-          <div class="grid-box grid-box--five">
-            <img src="/img/images/grid5.jpg" alt="">
-          </div>
-          <div class="grid-box grid-box--six">
-            <img src="/img/images/grid6.jpg" alt="">
-          </div>
-        </div>
-        <div class="subscribe-section__text-wrap">
-          <h2>Присоединяйтесь к нам</h2>
-          <p>Подпишитесь на наш аккаунт @marooncare и узнавайте о новиках и акциях первыми</p>
-          <button type="button" class="btn">Подписаться</button>
-        </div>
-      </section>
-      <section class="contacts container">
-        <div class="contacts__text-wrap">
-          <h2>Контакты</h2>
-          <span>Адрес</span>
-          <address>Санкт-Петербург,<br>ул. Большая Конюшенная, 19</address>
-          <span>Телефон</span><br>
-          <a href="tel:+79238889060" class="tel">+7 (923) 888-90-60</a><br>
-          <span>E-mail</span><br>
-          <a href="mailto:info@maroon.ru" class="email">info@maroon.ru</a>
-          @@include('blocks/socials.html')
-          <div class="contacts__map">
-            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323037%2C59.938631&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 на карте Санкт‑Петербурга, ближайшее метро Гостиный двор — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.323037%2C59.938631&mode=whatshere&whatshere%5Bpoint%5D=30.323037%2C59.938631&whatshere%5Bzoom%5D=17&z=16" width="670" height="422" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-          </div>
-        </div>
-      </section>
+      @@include('blocks/subscribe-section.html')
+      @@include('blocks/contacts-section.html')
     </main>
     @@include('blocks/footer.html')
     <script src="js/app.js" defer></script>
