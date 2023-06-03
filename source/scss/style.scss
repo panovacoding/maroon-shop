@@ -275,11 +275,10 @@ address {
 
 .filter-section {
   margin-top: 7.5%;
-  border: solid;
 }
 
 .catalog {
-  border: solid;
+  position: relative;
 }
 
 .big-slider {
@@ -287,6 +286,16 @@ address {
   overflow: hidden;
   width: 100%;
   padding-bottom: 65px;
+  &__arrow-wrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    padding-bottom: 5px;
+    &>button {
+      margin-left: 32px;
+    }
+  }
 }
 
 .big-slider__slide {

@@ -10,7 +10,7 @@ const newSwiper = new Swiper(".big-slider", {
         },
       },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.slider-btn-n',
+        prevEl: '.slider-btn-p',
     },
 });
