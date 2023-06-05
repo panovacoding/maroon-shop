@@ -1,11 +1,14 @@
 <footer>
   <div class="upper-footer container">
     <div class="inner-wrap">
-        @@include('blocks/logo.html')
+        <a href="/">
+            @@include('blocks/logo.html')
+        </a>
         <nav class="header__wrapper__menu-wrap">
             <ul class="nav-list">
               @@include('blocks/menu-list-item.html', {
                   "list-item": "Каталог",
+                  "href": "/catalog.html",
               })
               @@include('blocks/menu-list-item.html', {
                   "list-item": "О нас",

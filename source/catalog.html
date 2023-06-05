@@ -26,49 +26,111 @@
   @@include('blocks/header.html')
   <main>
     <section class="filter-section container">
-      <h1>Каталог</h1>
-      <button>Фильтры</button>
+      <h1 style="font-size: 36px;">Каталог</h1>
+      @@include('blocks/button.html', {
+        "txt": "Фильтр",
+    })
     </section>
     <section class="catalog container">
       <div class="big-slider swiper">
         <div class="swiper-wrapper">
           <div class="big-slider__slide swiper-slide">
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-1.jpg" alt="">
-            </div>
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-2.jpg" alt="">
-            </div>
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-3.jpg" alt="">
-            </div>
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-4.jpg" alt="">
-            </div>
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-5.jpg" alt="">
-            </div>
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-6.jpg" alt="">
-            </div>
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-7.jpg" alt="">
-            </div>
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-8.jpg" alt="">
-            </div>
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-9.jpg" alt="">
-            </div>
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-10.jpg" alt="">
-            </div>
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-11.jpg" alt="">
-            </div>
-            <div class="big-slider__item">
-              <img src="/img/images/catalog/catalog-12.jpg" alt="">
-            </div>
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-1.jpg",
+              "alt": "High",
+              "name": "High",
+              "type": "крем для лица",
+              "price": "990 ₽",
+              "volume": "50ml",
+            })
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-2.jpg",
+              "alt": "Rest",
+              "name": "Rest",
+              "type": "минеральная пудра",
+              "price": "690 ₽",
+              "volume": "20g",
+            })
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-3.jpg",
+              "alt": "Rose",
+              "name": "Rose",
+              "type": "крем для лица",
+              "price": "890 ₽",
+              "volume": "50ml",
+            })
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-4.jpg",
+              "alt": "Milk",
+              "name": "Milk",
+              "type": "масло для тела",
+              "price": "790 ₽",
+              "volume": "150ml",
+            })
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-5.jpg",
+              "alt": "Paradise",
+              "name": "Paradise",
+              "type": "минеральная пудра",
+              "price": "590 ₽",
+              "volume": "15g",
+            })
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-6.jpg",
+              "alt": "Sun",
+              "name": "Sun",
+              "type": "бомбочка для ванны",
+              "price": "90 ₽",
+              "volume": "20g",
+            })
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-7.jpg",
+              "alt": "Violet",
+              "name": "Violeyt",
+              "type": "крем для лица",
+              "price": "890 ₽",
+              "volume": "50ml",
+            })
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-8.jpg",
+              "alt": "Clean",
+              "name": "Clean",
+              "type": "маска для лица",
+              "price": "490 ₽",
+              "volume": "100g",
+            })
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-9.jpg",
+              "alt": "Coconut",
+              "name": "Coconut",
+              "type": "масло для тела",
+              "price": "990 ₽",
+              "volume": "300ml",
+            })
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-10.jpg",
+              "alt": "Lavender",
+              "name": "Lavender",
+              "type": "мыло ручной работы",
+              "price": "290 ₽",
+              "volume": "50g",
+            })
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-11.jpg",
+              "alt": "Lotos",
+              "name": "Lotos",
+              "type": "маска для лица",
+              "price": "890 ₽",
+              "volume": "50ml",
+            })
+            @@include('blocks/card.html', {
+              "src": "/img/images/catalog/catalog-12.jpg",
+              "alt": "Earth",
+              "name": "Earth",
+              "type": "бомбочка для ванны",
+              "price": "90 ₽",
+              "volume": "20g",
+            })
           </div>
           <div class="big-slider__slide swiper-slide">
             <div class="big-slider__item">

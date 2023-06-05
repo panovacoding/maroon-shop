@@ -275,6 +275,10 @@ address {
 
 .filter-section {
   margin-top: 7.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 53px;
 }
 
 .catalog {
@@ -294,6 +298,35 @@ address {
     padding-bottom: 5px;
     &>button {
       margin-left: 32px;
+    }
+  }
+  &__item {
+    position: relative;
+    &__description {
+      width: 100%;
+      padding-bottom: 20px;
+      position: absolute;
+      bottom: 0;
+      font-size: 13px;
+    }
+    &__name-and-price, &__type-and-volume {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 20px;
+      &>a {
+        color: inherit;
+      }
+    }
+    &__name-and-price {
+      font-weight: 500;
+      &>a>span {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+      }
+    }
+    &__type-and-volume {
+      color: #9A9DA0;
     }
   }
 }
