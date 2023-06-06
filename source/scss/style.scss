@@ -347,3 +347,15 @@ address {
   font-weight: 500;
   gap: 10px;
 }
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding-bottom: 163px;
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+}
