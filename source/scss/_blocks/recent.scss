@@ -1,0 +1,23 @@
+.recent {
+    padding-top: 140px;
+    &>h2 {
+        text-align: center;
+    }
+}
+
+.recent-swiper__slide {
+    display: flex;
+    justify-content: space-between;
+    // padding-bottom: 55px;
+    padding: 60px 0 55px;
+}
+
+.recent-swiper__arrow {
+    z-index: 999;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    &>button {
+        margin-left: 32px;
+    }
+}
