@@ -29,44 +29,120 @@
       <h1 style="font-size: 36px;">Каталог</h1>
       @@include('blocks/button.html', {
         "txt": "Фильтр",
-    })
+        "class": "filter-btn",
+      })
+      <button type="button" class="filter-close-button hidden">
+        <svg class="filter-close-btn">
+          <use xlink:href="./img/icons/sprite.svg#close"></use>
+        </svg>
+      </button>
     </section>
-    <div class="filter container">
-      <div>
-        <h3 class="filter__name">Уход для лица</h3>
-        <ul>
-          <li>Крема</li>
-          <li>Сыворотки</li>
-          <li>Маски</li>
-          <li>Пенки</li>
-          <li>Тоники</li>
-          <li>Пудры</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="filter__name">Уход для тела</h3>
-        <ul>
-          <li>Крема</li>
-          <li>Масла</li>
-          <li>Скрабы</li>
-          <li>Мыло</li>
-          <li>Бомбочки для ванны</li>
-          <li>Соль для ванны</li>
-        </ul>
-      </div>
-      <div>
+    <div class="filter-wrap hidden container" id="filter-section">
+      <div class="filter">
         <div>
-          <h3 class="filter__name">Тип кожи</h3>
-          <ul>
-            <li>Нормальная</li>
-            <li>Сухая</li>
-            <li>Жирная</li>
-            <li>Комбинированная</li>
+          <h3 class="filter__name">Уход для лица</h3>
+          <ul class="filter__list">
+            <li>
+              <input type="checkbox" name="face-treatment" id="face-cream" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="face-cream">Крема</label>
+            </li>
+            <li>
+              <input type="checkbox" name="face-treatment" id="serum" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="serum">Сыворотки</label>
+            </li>
+            <li>
+              <input type="checkbox" name="face-treatment" id="mask" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="mask">Маски</label>
+            </li>
+            <li>
+              <input type="checkbox" name="face-treatment" id="foam" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="foam">Пенки</label>
+            </li>
+            <li>
+              <input type="checkbox" name="face-treatment" id="tonic" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="tonic">Тоники</label>
+            </li>
+            <li>
+              <input type="checkbox" name="face-treatment" id="powder" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="powder">Пудры</label>
+            </li>
           </ul>
         </div>
-        <div class="filter__buttons">
-          <button>Применить</button>
-          <button>Сбросить</button>
+        <div>
+          <h3 class="filter__name">Уход для тела</h3>
+          <ul class="filter__list">
+            <li>
+              <input type="checkbox" name="body-treatment" id="body-cream" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="body-cream">Крема</label>
+            </li>
+            <li>
+              <input type="checkbox" name="body-treatment" id="oil" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="oil">Масла</label>
+            </li>
+            <li>
+              <input type="checkbox" name="body-treatment" id="scrub" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="scrub">Скрабы</label>
+            </li>
+            <li>
+              <input type="checkbox" name="body-treatment" id="soap" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="soap">Мыло</label>
+            </li>
+            <li>
+              <input type="checkbox" name="body-treatment" id="bath-bomb" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="bath-bomb">Бомбочки для ванны</label>
+            </li>
+            <li>
+              <input type="checkbox" name="body-treatment" id="bath-salt" class="filter__cb">
+              @@include('blocks/checkbox.html')
+              <label for="bath-salt">Соль для ванны</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter__button-section">
+          <div class="filter__button-section__list">
+            <h3 class="filter__name">Тип кожи</h3>
+            <ul class="filter__list">
+              <li>
+                <input type="checkbox" name="skin-type" id="normal" class="filter__cb">
+                @@include('blocks/checkbox.html')
+                <label for="normal">Нормальная</label>
+              </li>
+              <li>
+                <input type="checkbox" name="skin-type" id="dry" class="filter__cb">
+                @@include('blocks/checkbox.html')
+                <label for="dry">Сухая</label>
+              </li>
+              <li>
+                <input type="checkbox" name="skin-type" id="oily" class="filter__cb">
+                @@include('blocks/checkbox.html')
+                <label for="oily">Жирная</label>
+              </li>
+              <li>
+                <input type="checkbox" name="skin-type" id="combined" class="filter__cb">
+                @@include('blocks/checkbox.html')
+                <label for="combined">Комбинированная</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__button-section__buttons">
+            @@include('blocks/button.html', {
+              "txt": "Применить",
+            })
+            @@include('blocks/button.html', {
+              "txt": "Сбросить",
+            })
+          </div>
         </div>
       </div>
     </div>

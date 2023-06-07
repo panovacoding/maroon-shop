@@ -358,4 +358,44 @@ address {
     font-size: 18px;
     padding-bottom: 30px;
   }
+  &__button-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__checkbox {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    &>use {
+      fill: none;
+    }
+  }
+  &__list>li {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  &-close-btn {
+    width: 18px;
+    height: 18px;
+  }
+  &-close-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+#filter-section {
+  transition: all 10s ease-out;
+  opacity: 1;
+}
+
+.filter__cb {
+  position: absolute;
+  opacity: 0;
+}
+
+.filter__cb:checked ~ .filter__checkbox>use {
+  fill: #122947;
 }

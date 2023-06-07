@@ -35,4 +35,13 @@
     <symbol id="arrow-right" viewBox="0 0 27 14">
         <path d="M0 7H26M26 7L19.697 1M26 7L19.697 13" stroke="#122947"/>
     </symbol>
+
+    <symbol id="cb-unchecked" viewBox="0 0 14 14">
+        <circle cx="7" cy="7" r="6.5" stroke="#CDCDCD"/>
+    </symbol>
+
+    <symbol id="close" viewBox="0 0 20 20">
+        <path d="M1 1L10 10M19 19L10 10M10 10L19 1L1 19" stroke="#122947" stroke-width="2"/>
+    </symbol>
+
 </svg>

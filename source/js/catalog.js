@@ -1,4 +1,3 @@
-
 const newSwiper = new Swiper(".big-slider", {
     pagination: {
         el: '.swiper-pagination',
@@ -29,4 +28,20 @@ const recentSwiper = new Swiper ('.recent-swiper', {
         nextEl: '.recent-slider-btn-n',
         prevEl: '.recent-slider-btn-p',
     }
-})
+});
+
+const filterBtn  = document.querySelector('.filter-btn');
+const filterCloseBtn = document.querySelector('.filter-close-button');
+const filterSection = document.getElementById('filter-section');
+
+filterBtn.addEventListener('click', () => {
+    filterSection.classList.remove('hidden');
+    filterCloseBtn.classList.remove('hidden');
+    filterBtn.classList.add('hidden');
+});
+
+filterCloseBtn.addEventListener('click', () => {
+    filterSection.classList.add('hidden');
+    filterCloseBtn.classList.add('hidden');
+    filterBtn.classList.remove('hidden');
+});
